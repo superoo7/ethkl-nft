@@ -7,7 +7,7 @@ const ShowDataComponent: React.FunctionComponent = observer(() => {
     const presentation = React.useContext(presentationContext)
 
     return (
-        <div className="d-flex flex-column justify-content-center align-items-center">
+        <div className="d-flex flex-row justify-content-center align-items-center">
             <textarea
                 className="form-control"
                 readOnly

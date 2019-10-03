@@ -14,14 +14,28 @@ const GetIdsComponent: React.FunctionComponent = observer(() => {
     }
 
     return (
-        <div className="d-flex flex-column justify-content-center align-items-center">
-            <h4>Current balanceOf: {balanceOf}</h4>
-            <textarea className="form-control" readOnly rows={6} value={JSON.stringify(presentation.nftIds, null, 2)} />
-            <button onClick={handleClick} className="btn btn-info my-3">
-                Get all Uri
-            </button>
-            <textarea className="form-control" readOnly rows={6} value={JSON.stringify(presentation.uri, null, 2)} />
-        </div>
+        <>
+            <div>
+                <h4>Current balanceOf: {balanceOf}</h4>
+                <button onClick={handleClick} className="btn btn-info my-3">
+                    Get all Uri
+                </button>
+            </div>
+            <div className="d-flex flex-row justify-content-center align-items-center">
+                <textarea
+                    className="form-control"
+                    readOnly
+                    rows={6}
+                    value={JSON.stringify(presentation.nftIds, null, 2)}
+                />
+                <textarea
+                    className="form-control"
+                    readOnly
+                    rows={6}
+                    value={JSON.stringify(presentation.uri, null, 2)}
+                />
+            </div>
+        </>
     )
 })
 

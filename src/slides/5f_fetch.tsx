@@ -13,18 +13,25 @@ const FetchUriComponent: React.FunctionComponent = observer(() => {
     }
 
     return (
-        <div className="d-flex flex-column justify-content-center align-items-center">
-            <textarea className="form-control" readOnly rows={6} value={JSON.stringify(presentation.uri, null, 2)} />
+        <>
             <button onClick={handleClick} className="btn btn-info my-3">
                 Fetch all Uri
             </button>
-            <textarea
-                className="form-control"
-                readOnly
-                rows={6}
-                value={JSON.stringify(presentation.jsonArray, null, 2)}
-            />
-        </div>
+            <div className="d-flex flex-row justify-content-center align-items-center">
+                <textarea
+                    className="form-control"
+                    readOnly
+                    rows={6}
+                    value={JSON.stringify(presentation.uri, null, 2)}
+                />
+                <textarea
+                    className="form-control"
+                    readOnly
+                    rows={6}
+                    value={JSON.stringify(presentation.jsonArray, null, 2)}
+                />
+            </div>
+        </>
     )
 })
 
