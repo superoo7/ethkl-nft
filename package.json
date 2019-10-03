@@ -36,13 +36,13 @@
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/superoo7/nft-presentation.git"
+        "url": "git+https://github.com/superoo7/ethkl-nft.git"
     },
     "keywords": [],
     "author": "",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/superoo7/nft-presentation/issues"
+        "url": "https://github.com/superoo7/ethkl-nft/issues"
     },
-    "homepage": "https://superoo7.github.io/nft-presentation"
+    "homepage": "https://superoo7.github.io/ethkl-nft"
 }
