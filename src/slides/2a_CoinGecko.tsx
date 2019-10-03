@@ -12,5 +12,11 @@ export default (
                 CoinGecko API
             </a>
         </div>
+        <Image src="img/nftgecko-web.png" alt="nftgecko" />
+        <div className="d-flex justify-content-around">
+            <a href="https://forum.nftgecko.com" target="_blank" rel="noopener noreferrer">
+                NFTGecko Forum
+            </a>
+        </div>
     </Slide>
 )
